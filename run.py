@@ -47,7 +47,7 @@ model.load_state_dict(torch.load(r'E:\myvenv\lstm_model.pth', map_location='cpu'
 model.eval()
 
 # Function to generate a full sentence given a prompt
-def generate_full_sentence(prompt, model, word_to_idx, idx_to_word, max_length=50):
+def generate_sentence(prompt, model, word_to_idx, idx_to_word, max_length=50):
     tokenized_prompt = word_tokenize(prompt)
     sequence = [word_to_idx.get(word, 0) for word in tokenized_prompt]  # Convert words to indices
     input_tensor = torch.tensor(sequence).unsqueeze(0)  # Add batch dimension
@@ -73,6 +73,6 @@ def animate_text(text, delay=0.1):
 
 # Inference
 prompt = "To Sherlock Holmes"
-generated_text = generate_full_sentence(prompt, model, word_to_index, idx_to_word)
+generated_text = generate_sentence(prompt, model, word_to_index, idx_to_word)
 print(f"{generated_text}.")
 animate_text(generated_text)
