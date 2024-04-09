@@ -26,7 +26,7 @@ pip install torch nltk
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/lstm-text-generation.git
+git clone https://github.com/ShibamDas007/LSTM-next-word-predicter-model.git
 ```
 
 2. Navigate to the project directory:
