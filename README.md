@@ -63,7 +63,7 @@ python generate.py --model_path /path/to/saved/model.pth --prompt "Your prompt t
 
 - `lstm_torch_train.py`: Script for training the LSTM model.
 - `run.py`: Script for generating text using the trained model.
-- `lstm_model.py`: Definition of the LSTM neural network architecture.
+- `lstm_architecture.py`: Definition of the LSTM neural network architecture.
 - `utils.py`: Utility functions for data preprocessing and text generation.
 - `data/`: Directory for storing training data.
 - `models/`: Directory for saving trained models.
