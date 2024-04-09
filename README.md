@@ -58,7 +58,13 @@ To generate text using the trained model, specify the path to the saved model an
 ```
 python generate.py --model_path /path/to/saved/model.pth --prompt "Your prompt text here"
 ```
-
+## Output
+```
+PS E:\myvenv> python -u "e:\myvenv\AIProjects\lstm\run.py"
+User: The furniture
+The furniture wasscattered about in every direction , with dismantled shelves and opendrawers , as if the lady had hurriedly ransacked them before herflight 
+.
+```
 ## File Structure
 
 - `lstm_torch_train.py`: Script for training the LSTM model.
